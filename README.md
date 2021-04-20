@@ -85,5 +85,10 @@ end_time = time.time()
 print("Runtime for this program was {} seconds.".format(end_time - start_time))
 ```
 My first result was "Runtime for this program was 43.90109944343567 seconds."
-This wasn't too bad, but waiting 43 seconds for Palidromes is unacceptable. I would like to know my Palindromes near immediately. 
-Knowing I could do better, I setup my Palindromes using sets instead of lists. This ensures that the 
+This wasn't too bad, but waiting 43 seconds for Palidromes is unacceptable. I would like to know my Palindromes near immediately! 
+Knowing I could do better, I setup my Palindromes using sets instead of lists. Since sets are built to store multiple variables into 
+a single variable, the program can run much more effeciently. 
+"""
+Runtime for this program was 0.04596567153930664 seconds
+"""
+Much. MUCH better. Since it is running through about 62,000 entries, I gave my laptop a little tap on the keyboard and git pushed the program to completion. 
