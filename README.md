@@ -77,7 +77,7 @@ import cProfile
 import Pallindromes
 cProfile.run('Pallindromes.find_palingrams()')
 ```
-Afterward, I could simply get the exact runtime from start to finish without all the metrics by adding
+Afterward, I could simply get the exact runtime from start to finish without all the metrics by importing time and running throughout the entirity of the program.
 ```
 import time
 start_time = time.time()
@@ -91,4 +91,4 @@ a single variable, the program can run much more effeciently.
 ```
 Runtime for this program was 0.04596567153930664 seconds
 ```
-Much. MUCH better. Since it is running through about 62,000 entries, I gave my laptop a little tap on the keyboard and git pushed the program to completion. 
+Much. MUCH better. Since this program is running through about 62,000 entries, I was ready to move onto to my next project. I gave my laptop a little tap on the keyboard and git pushed the program to completion. 
