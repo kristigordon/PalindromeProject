@@ -92,3 +92,58 @@ a single variable, the program can run much more effeciently.
 Runtime for this program was 0.04596567153930664 seconds
 ```
 Much. MUCH better. Since this program is running through about 62,000 entries, I was ready to move onto to my next project. I gave my laptop a little tap on the keyboard and git pushed the program to completion. 
+
+This program can also be solved Recursively!
+
+```
+import load_Dictionary
+word_list = load_Dictionary.load('2of4brif.txt')
+
+def find_palindromes(word, start_index, end_index):
+    #base case (When we are going to stop calling the function)
+    if start_index == end_index:
+        return True
+    if word[start_index] == word[end_index]:
+        return find_palindromes(word, start_index + 1, end_index - 1)
+    else: 
+        return False
+
+pali_list = []
+for i in word_list:
+    if len(i) > 0: 
+    #We need to store the upper version of i into i (Case sensitive)
+        i = i.upper()
+    #Need to store the return value of find_palindromes
+        start = find_palindromes(i, 0, len(i)-1) 
+        if start == True:
+            pali_list.append(i)
+
+for palindrome in pali_list :
+    print(palindrome)
+    ```
+And here is a full walkthrough on how this program works:
+
+```
+ # MADAM
+    #First function call
+    #To represent last letter of string: Len(word) -1
+    #find_palindromes("MADAM", 0, 4)
+        #(1st if) Does start_index == end_index? 0 == 4? NO
+        #(2nd if) Does word[start_index] == word[end_index]? Does 'M' == 'M'? YES
+            #(Now go inside the if) Call the function again, 
+            #find_palindromes('MADAM', 1, 3) 
+            #Does 1 = 3? NO
+            #Does 'A' == 'A'? YES
+                #find_palindromes ('MADAM', 2, 2)
+                # Does 2 = 2? YES
+                    #Returns True and ends. 
+    
+    # NOUN
+    #find_palindromes ('NOUN', 0, 3)
+        #1st if - Does 0 == 3? NO
+        #2nd if - Does 'N' == 'N'? YES
+            #find_palindromes ('NOUN', 1, 2)
+                #1st if - Does 1 == 2? NO
+                #2nd if- Does 'O' == 'U'? NO
+                #else - return false and end. 
+```
