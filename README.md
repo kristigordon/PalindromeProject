@@ -120,11 +120,10 @@ for i in word_list:
 
 for palindrome in pali_list :
     print(palindrome)
-    ```
+```
 And here is a full walkthrough on how this program works:
 
 ```
- # MADAM
     #First function call
     #To represent last letter of string: Len(word) -1
     #find_palindromes("MADAM", 0, 4)
