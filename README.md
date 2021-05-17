@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/66803124/118496183-be7d3580-b6d8-11eb-94ff-93ac241ba3d7.png)
+
+
 # PalindromeProject
 
 This project is using Palindromes to show list manipulation, run time foundations, and introducing sets and time functions. 
@@ -146,3 +149,4 @@ And here is a full walkthrough on how this program works:
                 #2nd if- Does 'O' == 'U'? NO
                 #else - return false and end. 
 ```
+![image](https://user-images.githubusercontent.com/66803124/118496554-1451dd80-b6d9-11eb-8a40-951928d7d4f8.png)
