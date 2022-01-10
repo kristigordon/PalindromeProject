@@ -28,7 +28,8 @@ If the two equal one another, then that word is the same spelled regularly as it
 pali_list = []
 
 for word in word_list:     
-    #1st colon START : END (Index of the word) 2nd Colon (After end and how you go through the word) so -1 reverses the word 
+    #1st colon START : END (Index of the word) 2nd Colon (After end and how you go through the word) 
+    #so -1 reverses the word 
     if len(word) > 1 and word == word[::-1]:
         pali_list.append(word)
 
